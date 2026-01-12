@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>COVID-19 Data Analysis</h1>
+
+<h2>1. Population and Weekly Incidence (Top 20 Countries)</h2>
+<p>
+The left chart shows the total population of the selected countries, while the right chart
+shows the average number of new COVID-19 cases over the last seven days
+normalized per 100,000 inhabitants. These charts demonstrate that a high incidence
+rate is not directly related to the absolute size of the population.
+</p>
+<img src="output/bar_charts.png">
+Comparing these two charts confirms that a large population does not automatically imply a higher infection rate. Therefore, it is crucial to monitor indicators normalized to population size.
+<h2>2. Relationship Between Population Size and COVID-19 Incidence</h2>
+<p>
+The scatter plot illustrates the relationship between a country's population size and
+its average number of new COVID-19 cases per 100,000 inhabitants. The visualization
+suggests that there is no strong linear dependence between these two variables.
+</p>
+<img src="output/scatter.png">
+
+<h2>3. Linear Regression Fit</h2>
+<p>
+A linear regression line was added to the scatter plot to provide a simple approximation
+of the relationship between population size and COVID-19 incidence. The fitted line
+indicates only a weak linear trend.
+</p>
+<img src="output/linear_fit.png">
+
+<h2>4. Residual Analysis</h2>
+<p>
+The residual histogram shows the distribution of differences between the observed values
+and the values predicted by the linear regression model. A fitted normal distribution
+is overlaid to assess whether the residuals follow an approximately normal distribution,
+which is an important assumption of linear regression.
+</p>
+<img src="output/residuals.png">
+
+</body>
+</html>
